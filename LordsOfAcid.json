@@ -1,5 +1,6 @@
 [{
 	"royaltiesActive": "true",
+	"royaltiesContact": "loa-royalties@digitalsyndicate.io",
 	"royaltiesPercent": "10.0",
 	"royaltiesPrimaryPercent": "40.0",
 	"royaltiesPrimaryWallet": "addr1v80gf3xn485sc9qea4keh99klqk70vhdd923c43kh3tud9g2gmu0w",
