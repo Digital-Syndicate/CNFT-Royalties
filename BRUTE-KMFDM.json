@@ -1,0 +1,14 @@
+[{
+	"royaltiesActive": "true",
+	"royaltiesContact": "brute-royalties@digitalsyndicate.io",
+	"royaltiesPercent": "10.0",
+	"royaltiesPrimaryPercent": "40.0",
+	"royaltiesPrimaryWallet": "addr1vx73k9t3mumv8znnzel2uxsy7ew4fgtm9zwkg79zdqk84eq98ntxq",
+	"royaltiesPrimaryOwner": "BRUTE",
+	"royaltiesSecondaryPercent": "40.0",
+	"royaltiesSecondaryOwner": "KMFDM",
+	"royaltiesSecondaryWallet": "addr1vx78xq5ygxda2vhsfjj60tuca5kjv4y6gspxlgx394a476cskvf07",
+	"royaltiesTertiaryPercent": "20.0",
+	"royaltiesTertiaryOwner": "DigitalSyndicate",
+	"royaltiesTertiaryWallet": "addr1v83782te8eqkp2rpe9f487dj4cfplt27snsq9sx2nc8nekc5k44ky"
+}]
