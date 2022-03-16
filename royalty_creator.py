@@ -29,9 +29,6 @@ json_data = []
 wallet_balance = 0
 burn_after_mint = False
 
-#makeroyalty
-#merkabacnft.policy
-
 cli = 'cardano-cli'
 network = '--mainnet' # Use '--tesnet-magic 1097911063' for testnet
 node_home = '/opt/cardano/cnode/' #Replace with your node home folder
