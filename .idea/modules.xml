@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/CNFT-Royalties.iml" filepath="$PROJECT_DIR$/.idea/CNFT-Royalties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../GYOA/.idea/GYOA.iml" filepath="$PROJECT_DIR$/../GYOA/.idea/GYOA.iml" />
+    </modules>
+  </component>
+</project>
