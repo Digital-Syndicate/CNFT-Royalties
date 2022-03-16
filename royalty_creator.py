@@ -90,18 +90,18 @@ def make_777_token():
     tx_signed = './' + filename_begin + '.signed'
     command = (f'{cli} transaction build-raw --fee {min_fee} --invalid-hereafter {ttl} --tx-in {tx_in} --tx-out {payment_wallet}+{ll_amount}+"1 {policy_id}" --mint "1 {policy_id}"  --metadata-json-file {json_file} --minting-script-file ./{policy}.script --out-file {tx_draft}')
     results = run_cli(command)
-    print(command)
+    #print(command)
     min_fee = calc_min_fee(tx_draft, 1, witness_count=2, byron_witness_count=0)
     ll_amount = ll_amount = min_fee
     command = (f'{cli} transaction build-raw --fee {min_fee} --invalid-hereafter {ttl} --tx-in {tx_in} --tx-out {payment_wallet}+{ll_amount}+"1 {policy_id}" --mint "1 {policy_id}"  --metadata-json-file {json_file} --minting-script-file ./{policy}.script --out-file {tx_raw}')
     results = run_cli(command)
-    print(command)
+    #print(command)
     command = (f"{cli} transaction sign --tx-body-file {tx_raw} --signing-key-file ./{wallet}.skey --signing-key-file {policy}.skey {network} --out-file {tx_signed}")
     results = run_cli(command)
-    print(command)
+    #print(command)
     command = (f"{cli} transaction submit --tx-file {tx_signed} {network}")
     results = run_cli(command)
-    print(command)
+    #print(command)
     spent_utxo = []
     spent_utxo.append(tx_in)
     if burn_after_mint == True:
@@ -135,20 +135,20 @@ def burn_token(spent_utxo):
     command = (
         f'{cli} transaction build-raw --fee {min_fee} --invalid-hereafter {ttl} --tx-in {tx_in} --tx-out {payment_wallet}+{ll_amount}+"1 {policy_id}" --mint "-1 {policy_id}"  --metadata-json-file {json_file} --minting-script-file ./{policy}.script --out-file {tx_draft}')
     results = run_cli(command)
-    print(command)
+    #print(command)
     min_fee = calc_min_fee(tx_draft, 1, witness_count=2, byron_witness_count=0)
     ll_amount = ll_amount = min_fee
     command = (
         f'{cli} transaction build-raw --fee {min_fee} --invalid-hereafter {ttl} --tx-in {tx_in} --tx-out {payment_wallet}+{ll_amount}+"1 {policy_id}" --mint "-1 {policy_id}"  --metadata-json-file {json_file} --minting-script-file ./{policy}.script --out-file {tx_raw}')
     results = run_cli(command)
-    print(command)
+    #print(command)
     command = (
         f"{cli} transaction sign --tx-body-file {tx_raw} --signing-key-file ./{wallet}.skey --signing-key-file {policy}.skey {network} --out-file {tx_signed}")
     results = run_cli(command)
-    print(command)
+    #print(command)
     command = (f"{cli} transaction submit --tx-file {tx_signed} {network}")
     results = run_cli(command)
-    print(command)
+    #print(command)
     print('Royalty Token has been minted and burned.  Good luck with the drop!')
 
 
