@@ -124,9 +124,6 @@ def burn_token(spent_utxo):
             sleep(60)
         else:
             break
-    tx_hash = utxos[0]['TxHash']
-    tx_ix = utxos[0]['TxIx']
-    tx_in = f'{tx_hash}#{tx_ix}'
     ll_amount = int(utxos[0]['Lovelace'])
     tip = get_tip()
     ttl = tip + ttl_buffer
@@ -134,14 +131,12 @@ def burn_token(spent_utxo):
     tx_draft = './' + filename_begin + '.draft'
     tx_raw = './' + filename_begin + '.raw'
     tx_signed = './' + filename_begin + '.signed'
-    command = (
-        f'{cli} transaction build-raw --fee {min_fee} --invalid-hereafter {ttl} --tx-in {tx_in} --tx-out {payment_wallet}+{ll_amount}+"1 {policy_id}" --mint "-1 {policy_id}"  --metadata-json-file {json_file} --minting-script-file ./{policy}.script --out-file {tx_draft}')
+    command = (f'{cli} transaction build-raw --fee {min_fee} --invalid-hereafter {ttl} --tx-in {tx_in} --tx-out {payment_wallet}+{ll_amount} --mint "-1 {policy_id}" --minting-script-file ./{policy}.script --out-file {tx_draft}')
     results = run_cli(command)
     #print(command)
     min_fee = calc_min_fee(tx_draft, 1, witness_count=2, byron_witness_count=0)
     ll_amount = ll_amount - min_fee
-    command = (
-        f'{cli} transaction build-raw --fee {min_fee} --invalid-hereafter {ttl} --tx-in {tx_in} --tx-out {payment_wallet}+{ll_amount}+"1 {policy_id}" --mint "-1 {policy_id}"  --metadata-json-file {json_file} --minting-script-file ./{policy}.script --out-file {tx_raw}')
+    command = (f'{cli} transaction build-raw --fee {min_fee} --invalid-hereafter {ttl} --tx-in {tx_in} --tx-out {payment_wallet}+{ll_amount} --mint "-1 {policy_id}" --minting-script-file ./{policy}.script --out-file {tx_raw}')
     results = run_cli(command)
     #print(command)
     command = (
