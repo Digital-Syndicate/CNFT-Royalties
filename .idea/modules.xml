@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/CNFT-Royalties.iml" filepath="$PROJECT_DIR$/.idea/CNFT-Royalties.iml" />
       <module fileurl="file://$USER_HOME$/FrontEnd-Private/.idea/FrontEnd-Private.iml" filepath="$USER_HOME$/FrontEnd-Private/.idea/FrontEnd-Private.iml" />
       <module fileurl="file://$PROJECT_DIR$/../GYOA/.idea/GYOA.iml" filepath="$PROJECT_DIR$/../GYOA/.idea/GYOA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../exchange-stake-keys/.idea/exchange-stake-keys.iml" filepath="$PROJECT_DIR$/../exchange-stake-keys/.idea/exchange-stake-keys.iml" />
     </modules>
   </component>
 </project>

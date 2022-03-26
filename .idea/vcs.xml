@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$USER_HOME$/FrontEnd-Private" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../exchange-stake-keys" vcs="Git" />
   </component>
 </project>

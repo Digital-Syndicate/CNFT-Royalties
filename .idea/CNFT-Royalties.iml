@@ -6,5 +6,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="GYOA" />
     <orderEntry type="module" module-name="FrontEnd-Private" />
+    <orderEntry type="module" module-name="exchange-stake-keys" />
   </component>
 </module>
