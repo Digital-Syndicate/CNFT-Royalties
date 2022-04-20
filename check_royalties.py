@@ -1,5 +1,6 @@
 # Get Royalty Info v1.0
 # By Huth S0lo / Digital Syndicate
+# Does not check if 777 is the first mint.  Will add in v1.1
 # 4/20/2022
 
 import requests
